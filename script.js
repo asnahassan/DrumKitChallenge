@@ -7,7 +7,7 @@ window.addEventListener('keydown', (e) => {
     song.currentTime = 0;
     song.play();
     name.classList.add('animate')
-            setTimeout( () => name.classList.remove('animate'), 200);
+            setTimeout( () => name.classList.remove('animate'), 100);
 });
 
 
@@ -25,5 +25,5 @@ function playByMouse(e)
 	song.play();
 	const name = document.querySelector(`.name[id="${keyCode}"]`);
     name.classList.add('animate');
-        setTimeout( () => name.classList.remove('animate'), 200);  
+        setTimeout( () => name.classList.remove('animate'), 100);  
 }
